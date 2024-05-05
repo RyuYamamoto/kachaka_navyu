@@ -1,0 +1,16 @@
+global_costmap_node:
+  ros__parameters:
+    update_frequency: 1.0
+    base_frame_id: base_link
+    map_frame_id: map
+    plugins: [static_layer, inflation_layer]
+    inflation_layer:
+      inflation_radius: 0.22
+      robot_radius: 0.16
+    static_layer:
+      map_topic: map
+    dynamic_layer:
+      scan_topic: scan
+      global_frame: map
+      min_laser_range: 0.0
+      max_laser_range: 5.0
