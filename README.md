@@ -33,7 +33,7 @@ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --package
 ### 3. Launch navigation
 Launch ROS 2 Bridge.
 ```bash
-cd kachaka-api/
+cd kachaka-api/tools/ros2_bridge
 ./start_bridge.sh <kachaka IP Adress>
 ```
 
